@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Stopwatch from "./conponents/Stopwatch";
-/*
 import Countdown from "./conponents/Countdown";
-*/
 
 
 class App extends Component {
@@ -13,7 +11,7 @@ class App extends Component {
                 <div className="App-title">Timers Demo</div>
                 <div className="Timers">
                     <Stopwatch />
-                 {/*   <Countdown />*/}
+                    <Countdown />
                 </div>
             </div>
         );
