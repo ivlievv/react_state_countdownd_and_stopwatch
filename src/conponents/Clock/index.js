@@ -1,11 +1,14 @@
 import React from "react";
 import styles from './styles.module.css'
+import Toggle from "../Toggle";
+import classNames from 'classnames'
 
 class Clock extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            date: new Date()
+            date: new Date(),
+
         };
     }
 
@@ -27,9 +30,14 @@ class Clock extends React.Component {
     }
 
     render() {
+
+        let button ;
+
+
         return (
-            <div className={styles.time}>
-                <h2 >{this.state.date.toLocaleTimeString()}.</h2>
+            <div className={styles.container}>
+                <h2 className={styles.time}>{this.state.date.toLocaleTimeString()}</h2>
+                <Toggle/>
             </div>
         );
     }
