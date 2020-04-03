@@ -15,6 +15,6 @@ class App extends Component {
                 </div>
             </div>
         );
-    }
+     }
 }
 export default App;
